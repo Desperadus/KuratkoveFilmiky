@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import discord
 from discord.ui import Button, View, Modal, TextInput, Select
 
