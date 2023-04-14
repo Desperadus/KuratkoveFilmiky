@@ -6,6 +6,7 @@ from typing import List, Tuple, Optional, Union, NewType, Iterable, Dict
 import csv, urllib.request
 from itertools import product
 
+import secret
 HIGHPRIORITY_LIMIT: int = 5
 DEFAULT_HIGHPRIORITY_COPY_NUM: int = 3
 
