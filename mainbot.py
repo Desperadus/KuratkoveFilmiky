@@ -114,10 +114,7 @@ async def on_message(message):
                 await channel.send("Nespravny format prikazu, pouzij !movies <pocet filmu> <uživatelé>")
 
     
-    if message.content == "!moviehelp":
-        await message.channel.send("Použij **!movies <pocet filmu> <uživatelé>** pro zobrazení top filmů.\nNapř: *!movies 5 Pika Kickin Sandrini* \n\n **!moviespeople** pro zobrazení seznamu uživatelů.")
-
-    if message.content == "!movieshelp":
+    if message.content == "!moviehelp" or message.content == "!movieshelp":
         await message.channel.send("Použij **!movies <pocet filmu> <uživatelé>** pro zobrazení top filmů.\nNapř: *!movies 5 Pika Kickin Sandrini* \n\n **!moviespeople** pro zobrazení seznamu uživatelů.")
 
     
