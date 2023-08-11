@@ -23,22 +23,10 @@ async def list_people(message):
     
     await message.channel.send(embed=embed)
 
-    
 
 def choose_random_gif():
-    rng = random.randint(0, 5)
-    if rng == 0:
-        return "https://media.tenor.com/OAZ6t5iGLGQAAAAM/movie-time.gif"
-    elif rng == 1:
-        return "https://media4.giphy.com/media/tmH5eUto7WumOdTvRG/giphy.gif"
-    elif rng == 2:
-        return "https://custom-doodle.com/wp-content/uploads/doodle/movie-time-yellow-text/movie-time-yellow-text-doodle.gif"
-    elif rng == 3:
-        return "https://media.tenor.com/5KF3BqrpKs8AAAAM/eating-popcorn-watching-a-movie.gif"
-    elif rng == 4:
-        return "https://gifdb.com/images/high/popcorn-panda-movie-time-87zj3il8jv83y1lv.gif"
-    else:
-        return "https://thumbs.gfycat.com/AdolescentFaintAfricangoldencat-max-1mb.gif"
+    gifs = ["https://media.tenor.com/OAZ6t5iGLGQAAAAM/movie-time.gif", "https://media4.giphy.com/media/tmH5eUto7WumOdTvRG/giphy.gif", "https://custom-doodle.com/wp-content/uploads/doodle/movie-time-yellow-text/movie-time-yellow-text-doodle.gif", "https://media.tenor.com/5KF3BqrpKs8AAAAM/eating-popcorn-watching-a-movie.gif"]
+    return random.choice(gifs)
 
 
 async def add_reactions(message, channel, amount):
